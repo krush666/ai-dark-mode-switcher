@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Dark Mode Switcher - Smart Theme Switching</title>
+    <style>
+        :root {
+            --light-grey: #f5f5f5;
+            --dark-grey: #2d2d2d;
+            --orange: #ff6b00;
+            --blue: #2196F3;
+            --green: #4CAF50;
+        }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: var(--dark-grey);
+            color: var(--light-grey);
+        }
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(45deg, var(--dark-grey), #1a1a1a);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 4rem 2rem;
+        }
+        .feature-card {
+            background: #333;
+            padding: 2rem;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            border-left: 4px solid var(--blue);
+        }
+        .feature-card.ai-mode {
+            border-left-color: var(--green);
+        }
+        .feature-card.manual-mode {
+            border-left-color: var(--orange);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .cta-button {
+            background: var(--orange);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin: 1rem;
+        }
+        .cta-button:hover {
+            background: #ff8533;
+        }
+        .mode-toggle {
+            display: inline-block;
+            background: var(--blue);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: bold;
+            margin: 0.5rem;
+        }
+        .mode-toggle.manual {
+            background: var(--green);
+        }
+        .highlight {
+            color: var(--orange);
+            font-weight: bold;
+        }
+        .tech-specs {
+            background: #252525;
+            padding: 2rem;
+            margin: 2rem;
+            border-radius: 10px;
+            border: 1px solid #444;
+        }
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .tech-item {
+            background: #333;
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div style="display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <div style="flex: 1; text-align: left;">
+                <h1>AI Dark Mode Switcher</h1>
+                <h4>Smartly switch between light and dark themes based on your schedule or system preferences</h4>
+                <p class="highlight">Version 3.2.1 - Privacy-Focused, No Tracking</p>
+                <button class="cta-button" style="margin-top: 1rem; background: var(--orange); color: white; padding: 1rem 2rem; border: none; border-radius: 25px; font-size: 1.2rem; cursor: pointer; transition: background 0.3s;">Download Free</button>
+            </div>
+            <div style="flex: 0 0 auto;">
+                <img src="https://rankboost.pro/wp-content/uploads/2025/01/Screenshot-2025-01-20-202035.png" alt="Hero Image" style="width: 300px; height: 455px; object-fit: contain;">
+            </div>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="feature-card ai-mode">
+            <h3>🤖 AI Mode</h3>
+            <p><span class="mode-toggle">6:30 PM - 8:30 AM</span></p>
+            <p>Automatic dark mode using system time. No setup required - just works with intelligent scheduling.</p>
+        </div>
+        <div class="feature-card manual-mode">
+            <h3>⚙️ Manual Mode</h3>
+            <p><span class="mode-toggle manual">Custom Times</span></p>
+            <p>Set your own dark mode schedule with precise time control. Perfect for personalized routines.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🔄 Smart Toggle</h3>
+            <p>Seamlessly switch between AI and Manual modes with one click. Visual feedback shows current mode.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🔒 Privacy First</h3>
+            <p>No external tracking or data collection. Your browsing habits stay private and secure.</p>
+        </div>
+        <div class="feature-card">
+            <h3>⚡ Real-time Updates</h3>
+            <p>Status updates every second to reflect current time and mode. Always know what's active.</p>
+        </div>
+        <div class="feature-card">
+            <h3>💾 Persistent Storage</h3>
+            <p>Your settings saved across browser sessions. Never lose your custom configurations.</p>
+        </div>
+    </div>
+
+    <div class="tech-specs">
+        <h2>Technical Specifications</h2>
+        <div class="tech-grid">
+            <div class="tech-item">
+                <strong>Manifest</strong><br>
+                Version 3 (Chrome API v3)
+            </div>
+            <div class="tech-item">
+                <strong>Background</strong><br>
+                Service Worker
+            </div>
+            <div class="tech-item">
+                <strong>Storage</strong><br>
+                Chrome Local Storage
+            </div>
+            <div class="tech-item">
+                <strong>Permissions</strong><br>
+                storage, tabs, scripting, contextMenus
+            </div>
+            <div class="tech-item">
+                <strong>CSP</strong><br>
+                Web Store Compliant
+            </div>
+            <div class="tech-item">
+                <strong>Error Handling</strong><br>
+                Robust with Fallbacks
+            </div>
+        </div>
+    </div>
+
+    <div class="hero" style="background: linear-gradient(45deg, #1a1a1a, var(--dark-grey));">
+        <h2>Installation Instructions</h2>
+        <p>Follow these steps to install AI Dark Mode Switcher on your Chrome browser</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto; padding: 2rem;">
+            <div style="background: #333; padding: 2rem; border-radius: 10px; border-left: 4px solid var(--orange);">
+                <h3 style="color: var(--orange); margin-top: 0;">Step 1: Unzip Extension Files</h3>
+                <ol style="text-align: left; line-height: 1.6;">
+                    <li>Download the AI Dark Mode Switcher extension ZIP file</li>
+                    <li>Extract/unzip the contents to a folder on your computer</li>
+                    <li>Make sure you have all files: manifest.json, popup.html, popup.js, background.js, styles.css, and icons/ folder</li>
+                    <li>Keep the extracted folder in a safe location for the next steps</li>
+                </ol>
+            </div>
+            
+            <div style="background: #333; padding: 2rem; border-radius: 10px; border-left: 4px solid var(--blue);">
+                <h3 style="color: var(--blue); margin-top: 0;">Step 2: Open Chrome Extensions</h3>
+                <ol style="text-align: left; line-height: 1.6;">
+                    <li>Open Google Chrome browser</li>
+                    <li>Click the three dots (⋮) in the top-right corner</li>
+                    <li>Select "More tools" → "Extensions"</li>
+                    <li>Or type <code style="background: #222; padding: 2px 6px; border-radius: 4px;">chrome://extensions/</code> in the address bar</li>
+                </ol>
+            </div>
+            
+            <div style="background: #333; padding: 2rem; border-radius: 10px; border-left: 4px solid var(--green);">
+                <h3 style="color: var(--green); margin-top: 0;">Step 3: Enable Developer Mode</h3>
+                <ol style="text-align: left; line-height: 1.6;">
+                    <li>Toggle on "Developer mode" in the top-right corner</li>
+                    <li>You'll see new buttons appear: "Load unpacked", "Pack extension", and "Update"</li>
+                    <li>This enables loading local extensions for development</li>
+                </ol>
+            </div>
+            
+            <div style="background: #333; padding: 2rem; border-radius: 10px; border-left: 4px solid var(--orange);">
+                <h3 style="color: var(--orange); margin-top: 0;">Step 4: Load Extension</h3>
+                <ol style="text-align: left; line-height: 1.6;">
+                    <li>Click the "Load unpacked" button</li>
+                    <li>Navigate to the folder containing your extension files</li>
+                    <li>Select the folder (it should contain manifest.json, popup.html, etc.)</li>
+                    <li>Your extension will be loaded and ready to use!</li>
+                </ol>
+            </div>
+        </div>
+        
+        <div style="background: #252525; padding: 2rem; margin: 2rem auto; border-radius: 10px; border: 1px solid #444; max-width: 800px;">
+            <h3 style="margin-top: 0; color: var(--orange);">Important Notes:</h3>
+            <ul style="text-align: left; line-height: 1.6;">
+                <li>Keep the extension folder in a safe location - deleting it will remove the extension</li>
+                <li>After making changes to your extension files, click "Update" to reload</li>
+                <li>Your extension will appear in the Chrome toolbar as an icon</li>
+                <li>Click the extension icon to open the popup and start using AI Dark Mode Switcher</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h2>Transform Your Viewing Experience</h2>
+        <p>Join thousands of users who've upgraded to AI Dark Mode Switcher</p>
+        <button class="cta-button" onclick="window.open('https://rankboost.pro/dark-auto-switcher-v3', '_blank')">START</button>
+        <p style="font-size: 0.9rem; color: #888; margin-top: 1rem;">
+            Created by Jeremy McDonell (krush) | Licensed under GNU GPL v3.0
+        </p>
+    </div>
+</body>
+</html>

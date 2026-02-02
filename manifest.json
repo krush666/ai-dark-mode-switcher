@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "AI Dark Mode Switcher",
+  "version": "1.0",
+  "description": "Automatically switches between dark and light mode based on time of day",
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+} 

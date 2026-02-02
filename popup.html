@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto Dark Mode Switcher</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="icons/icon8.png" alt="Dark Mode Icon" class="header-icon">
+      <h1>Auto Dark Mode Switcher</h1>
+    </div>
+    <div class="status">
+      <p>Current Mode: <span id="currentMode">Checking...</span></p>
+      <p>Control: <span id="controlMode">Checking...</span></p>
+      <p>Dark Mode Hours: <input type="time" id="darkModeStart" value="17:30"> - <input type="time" id="darkModeEnd" value="07:00"></p>
+    </div>
+    <div class="button-container">
+      <button class="feature-button go-pro-button">START</button>
+      <button class="feature-button ai-mode-button">AI Mode</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
