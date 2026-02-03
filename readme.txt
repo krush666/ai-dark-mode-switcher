@@ -15,6 +15,8 @@ Copyright (C) 2025 Jeremy Mcdonell
 CREATED BY JEREMY MCDONELL (krush)
 https://www.linkedin.com/in/jeremy-mcdonell-34628b192/
 
+Install Instructions -- > https://rankboost.pro/dark-auto-switcher-v3
+
 v3.2.1
 
 CHANGELOG:
